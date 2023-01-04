@@ -12,6 +12,7 @@ app.use(express.static("build"));
 app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
+console.log("hi", __dirname);
 
 const userSocketMap = {};
 
